@@ -1,0 +1,44 @@
+name: Validate catalog and publish guide
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['app-catalog.json', 'catalog.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: catalog-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/build.py
+      - name: Preserve generated catalogs
+        run: |
+          git config user.name 'LaserForge Catalog'
+          git config user.email 'catalog@users.noreply.github.com'
+          git add catalog.json app-catalog.json
+          git diff --cached --quiet || git commit -m 'Generate validated speaker catalog'
+          git push
+      - uses: actions/configure-pages@v5
+      - name: Package public guide
+        run: |
+          mkdir _site
+          cp index.html editor.html guide.js editor.js style.css catalog.json app-catalog.json _site/
+          cp -R assets research _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
