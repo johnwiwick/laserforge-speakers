@@ -1,14 +1,14 @@
 {
   "schema": "jw-speaker-catalog-v1",
-  "revision": "2026-10-21T07:17:16Z",
+  "revision": "2026-10-21T07:25:44Z",
   "models": [
     {
       "id": "PS95-8",
       "tier": "good",
       "kind": "full_range",
       "inches": 3.5,
-      "frame": 100.0,
-      "cutout": 69.8,
+      "frame": 98.2,
+      "cutout": 77.5,
       "depth": 52.3,
       "fs": 119.8,
       "qts": 0.72,
@@ -26,7 +26,7 @@
       "ventedLitres": 0.0,
       "tuningHz": 0.0,
       "msrp": 38.99,
-      "notes": "Small desktop satellite. Sealed only: high Qts. Square frame: conservative 100 mm envelope; confirm flange against drawing. Product page lists 76.8 mm outside diameter despite square ears.",
+      "notes": "Compact sealed desktop satellite. Corrected flange envelope 98.2 mm from drawing; use nominal 77.5 mm cutout (Parts Express 3.05 inch = 77.47 mm), NOT the erroneous 69.8 mm product-page entry. Test-fit actual hardware.",
       "model": "Dayton Audio PS95-8",
       "source": "https://www.daytonaudio.com/product/1241/ps95-8-3-1-2-point-source-full-range-driver-8-ohm",
       "datasheet": "https://daytonaudio.vortxhosting.com/images/resources/295-349--dayton-audio-ps95-8-spec-sheet.pdf",
@@ -34,12 +34,12 @@
       "checked": "2026-10-21",
       "enabled": true,
       "tested": false,
-      "displacement": 0.07,
+      "displacement": 0.086,
       "displacementBasis": "Estimated solid-volume allowance; measure actual driver before final volume validation",
       "image": "assets/PS95-8.svg",
       "drawing": "assets/PS95-8-dimensions.svg",
-      "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+PS95-8&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonUrl": "https://www.amazon.com/dp/B00Q3M9852?tag=johnwickstu04-20",
+      "amazonStatus": "Exact PS95-8 8 ohm listing identity verified on Amazon 2026-10-21. Check current offer.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -78,8 +78,8 @@
       "displacementBasis": "Estimated solid-volume allowance; measure actual driver before final volume validation",
       "image": "assets/RS100-8.svg",
       "drawing": "assets/RS100-8-dimensions.svg",
-      "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+RS100-8&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonUrl": "https://www.amazon.com/dp/B0045V1VKI?tag=johnwickstu04-20",
+      "amazonStatus": "Exact RS100-8 8 ohm listing identity verified on Amazon 2026-10-21. Check current offer.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -119,7 +119,7 @@
       "image": "assets/PS220-8.svg",
       "drawing": "assets/PS220-8-dimensions.svg",
       "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+PS220-8&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonStatus": "No exact Amazon offer found in the checked search on 2026-10-21; distributor back-order observed. Do not substitute a different model.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -145,7 +145,7 @@
       "netLitres": 3.636,
       "ventedLitres": 10.0,
       "tuningHz": 40.0,
-      "msrp": 0.0,
+      "msrp": 71.99,
       "notes": "Compact sub; needs low-pass amplifier/DSP. Drawing used: 167 mm flange, 143 mm cutout, conservative 89.3 mm overall depth. Product page inch dimensions disagree.",
       "model": "Dayton Audio DCS165-4",
       "source": "https://www.daytonaudio.com/product/1268/dcs165-4-6-1-2-classic-subwoofer-4-ohm",
@@ -160,7 +160,7 @@
       "drawing": "assets/DCS165-4-dimensions.svg",
       "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+DCS165-4&tag=johnwickstu04-20",
       "amazonStatus": "Exact-model search; listing, price and availability not verified",
-      "priceNote": "Current price unavailable; check Amazon"
+      "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
       "id": "DCS205-4",
