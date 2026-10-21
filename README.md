@@ -7,12 +7,12 @@ John Wick Studio's editable driver data and browser parts guide for LaserForge.
 ## Update without programming
 
 1. Open the model editor, select a model, and edit the labeled form.
-2. Keep changes and download `models.csv`.
-3. On GitHub choose **Add file → Upload files**, drop in `models.csv`, and commit.
-4. Wait for **Actions → Validate catalog and publish guide** to finish green.
+2. Keep changes and download the catalog update ZIP.
+3. On GitHub choose **Add file → Upload files**, unzip the downloaded update, drop in its three files (`models.csv`, `catalog.json`, `app-catalog.json`), and commit.
+4. Wait for GitHub Pages to finish rebuilding (usually about a minute). The browser form and desktop importer both validate the data.
 5. In LaserForge click **Update supported models**. Existing projects preserve their selected specification snapshots; reselect a model to use a revised record.
 
-You can also open `models.csv` in Numbers or Excel, edit cells, and export CSV. Do not rename the columns. Numeric fields use the units in the browser form. Upload illustrations and dimension drawings into `assets/` before enabling a new model. Use original source links for manufacturer photographs and PDFs if redistribution permission is uncertain. Current saved SVG images are original schematic illustrations, not manufacturer photos or complete mounting drawings.
+For developer-managed bulk edits you can also open `models.csv` in Numbers or Excel, edit cells, export CSV, and run `python3 scripts/build.py` before uploading the generated JSON files. The browser editor is the programming-free path. Do not rename the columns. Numeric fields use the units in the browser form. Upload illustrations and dimension drawings into `assets/` before enabling a new model. Use original source links for manufacturer photographs and PDFs if redistribution permission is uncertain. Current saved SVG images are original schematic illustrations, not manufacturer photos or complete mounting drawings.
 
 ## Data quality
 
@@ -26,7 +26,7 @@ You can also open `models.csv` in Numbers or Excel, edit cells, and export CSV. 
 ## Files
 
 - `models.csv`: owner-editable source of truth.
-- `scripts/build.py`: validates source and creates the guide/desktop JSON files.
+- `scripts/build.py`: developer bulk-edit validator; validates source and creates the guide/desktop JSON files.
 - `catalog.json`: browser guide including Amazon destinations, forced to `johnwickstu04-20`.
 - `app-catalog.json`: desktop technical data; no Amazon links or Associate tag.
 - `assets/`: saved original illustrations and dimensional reference SVGs.
@@ -43,3 +43,5 @@ Protected original complete speaker designs, measured responses, approved custom
 Each record retains manufacturer product, specification/drawing PDF and product-photo references, checked October 21, 2026. Manufacturer content remains the manufacturer's property. Original schematic SVGs may be used with LaserForge. They are explicitly labeled reference illustrations, not photographs or screw-drilling templates.
 
 As an Amazon Associate, John Wick Studio earns from qualifying purchases. Add the published guide URL to your Associates account's approved website list before using it commercially. The guide is substantive model information and requires a deliberate user click to visit Amazon; it is not an automatic redirect. The desktop app opens only the guide.
+
+Automatic CSV-only regeneration is prepared in `scripts/examples/catalog-workflow.yml` but not enabled: the current GitHub OAuth login does not have workflow scope. Normal owner updates use the validated browser bundle and need no additional permission.
