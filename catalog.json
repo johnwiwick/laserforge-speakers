@@ -1,6 +1,6 @@
 {
   "schema": "jw-speaker-catalog-v1",
-  "revision": "2026-10-21T07:25:44Z",
+  "revision": "2026-10-21T07:37:56Z",
   "models": [
     {
       "id": "PS95-8",
@@ -39,7 +39,7 @@
       "image": "assets/PS95-8.svg",
       "drawing": "assets/PS95-8-dimensions.svg",
       "amazonUrl": "https://www.amazon.com/dp/B00Q3M9852?tag=johnwickstu04-20",
-      "amazonStatus": "Exact PS95-8 8 ohm listing identity verified on Amazon 2026-10-21. Check current offer.",
+      "amazonStatus": "Exact model/impedance identity verified on Amazon 2026-10-21. Check current price, seller and stock on Amazon.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -79,7 +79,7 @@
       "image": "assets/RS100-8.svg",
       "drawing": "assets/RS100-8-dimensions.svg",
       "amazonUrl": "https://www.amazon.com/dp/B0045V1VKI?tag=johnwickstu04-20",
-      "amazonStatus": "Exact RS100-8 8 ohm listing identity verified on Amazon 2026-10-21. Check current offer.",
+      "amazonStatus": "Exact model/impedance identity verified on Amazon 2026-10-21. Check current price, seller and stock on Amazon.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -118,8 +118,8 @@
       "displacementBasis": "Estimated solid-volume allowance; measure actual driver before final volume validation",
       "image": "assets/PS220-8.svg",
       "drawing": "assets/PS220-8-dimensions.svg",
-      "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+PS220-8&tag=johnwickstu04-20",
-      "amazonStatus": "No exact Amazon offer found in the checked search on 2026-10-21; distributor back-order observed. Do not substitute a different model.",
+      "amazonUrl": "https://www.amazon.com/dp/B0045F9HKA?tag=johnwickstu04-20",
+      "amazonStatus": "Exact model/impedance identity verified on Amazon 2026-10-21. Currently unavailable when checked; no substitute model is approved.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -158,8 +158,8 @@
       "displacementBasis": "Estimated solid-volume allowance; measure actual driver before final volume validation",
       "image": "assets/DCS165-4.svg",
       "drawing": "assets/DCS165-4-dimensions.svg",
-      "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+DCS165-4&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonUrl": "https://www.amazon.com/dp/B071GCS7TV?tag=johnwickstu04-20",
+      "amazonStatus": "Exact model/impedance identity verified on Amazon 2026-10-21. Check current price, seller and stock on Amazon.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -199,7 +199,7 @@
       "image": "assets/DCS205-4.svg",
       "drawing": "assets/DCS205-4-dimensions.svg",
       "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+DCS205-4&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonStatus": "No exact Amazon listing verified in the checked search on 2026-10-21. Search link only; do not substitute a different model.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     },
     {
@@ -238,8 +238,8 @@
       "displacementBasis": "Estimated solid-volume allowance; measure actual driver before final volume validation",
       "image": "assets/RSS210HF-4.svg",
       "drawing": "assets/RSS210HF-4-dimensions.svg",
-      "amazonUrl": "https://www.amazon.com/s?k=Dayton+Audio+RSS210HF-4&tag=johnwickstu04-20",
-      "amazonStatus": "Exact-model search; listing, price and availability not verified",
+      "amazonUrl": "https://www.amazon.com/dp/B00I9UFZ44?tag=johnwickstu04-20",
+      "amazonStatus": "Exact model/impedance identity verified on Amazon 2026-10-21. Currently unavailable when checked; no substitute model is approved.",
       "priceNote": "Manufacturer MSRP reference only; not an Amazon offer"
     }
   ],
